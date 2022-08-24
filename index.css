@@ -121,8 +121,8 @@ button[name="resetscore"]{
 
 .points-container{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-end;  
 }
 
 #timer-container{

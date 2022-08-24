@@ -1,0 +1,147 @@
+@font-face{
+    font-family: "timerfont";
+    src: url("CursedTimerULiL.ttf");
+}
+body, div{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 675px;
+    height: 385px;
+    background-color: #1B244A;
+    color: #EEEEEE;
+}
+
+#home, #guests{
+    text-align: center;
+    height: 100%;
+
+}
+h3{
+  font-family: Verdana;
+  font-weight: 700  ;
+  font-size: 40px;
+  margin: 0;
+}
+
+.points-container{
+
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    font-family: timerfont;
+    font-size: 90px;
+    margin:0 auto;
+}
+p{
+  color: #F94F6D;
+  padding-top: 2%;
+}
+
+.pointsbtn{
+  background-color: #1B244A;
+  width: 45px;
+  height: 45px;
+  color: white;
+  font-family: timerfont;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+/*************************************
+              TIMER
+**************************************/
+
+#timerp{
+  text-align: center;
+  font-family: timerfont;
+  font-size: 50px;
+  margin: 0;
+}
+
+button[name="start"], button[name = "stop"], button[name = "reset"]{
+  font-family: Verdana;
+  box-sizing: border-box;
+}
+button[name="start"]{
+  margin-bottom: 15px;
+  color: white;
+  background-color: #065F46;
+  padding: 10px;
+  border: none;
+  width: 73%;
+}
+button[name = "stop"], button[name = "reset"]{
+  width: 35%;
+  color: white;
+  margin-bottom: 15px;
+  padding: 5px ;
+}
+button[name = "stop"]{
+  margin-right: 5px;
+  background: #BE123C;
+
+}
+button[name = "reset"]{
+  background: #374151;
+}
+
+button[name="resetscore"]{
+  margin-bottom: 15px;
+  color: white;
+  background-color: #065F46;
+  padding: 10px;
+  border: none;
+  width: 73%;
+}
+
+
+
+
+
+/*******************************************************************************
+********************************************************************************
+                                    FLEX PROPERTIES
+********************************************************************************
+********************************************************************************/
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#home, #guests{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.points-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#timer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#timerbtn-container2{
+  display: flex;
+  justify-content: center;
+}
+
+#timerbtn-container3{
+  display: flex;
+  justify-content: center;
+}
+
+#timerbtn-container4{
+  display: flex;
+  justify-content: center;
+}

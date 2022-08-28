@@ -11,6 +11,7 @@ body, div{
     width: 675px;
     height: 385px;
     background-color: #1B244A;
+    border-radius: 15px;
     color: #EEEEEE;
 }
 
@@ -35,10 +36,13 @@ h3{
     font-size: 90px;
     margin:0 auto;
 }
-p{
+#points-home, #points-guests{
   color: #F94F6D;
   padding-top: 2%;
+  text-align: center;
+  margin: 0;
 }
+
 
 .pointsbtn{
   background-color: #1B244A;
@@ -62,7 +66,8 @@ p{
   margin: 0;
 }
 
-button[name="start"], button[name = "stop"], button[name = "reset"]{
+button[name="start"], button[name = "stop"], button[name = "reset"],
+button[name = "resetscore"]{
   font-family: Verdana;
   box-sizing: border-box;
 }
@@ -90,6 +95,7 @@ button[name = "reset"]{
 }
 
 button[name="resetscore"]{
+
   margin-bottom: 15px;
   color: white;
   background-color: #065F46;
@@ -98,7 +104,12 @@ button[name="resetscore"]{
   width: 73%;
 }
 
-
+button[name="start"]:active,button[name="stop"]:active,
+button[name="reset"]:active, button[name="resetscore"]:active{
+  -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+}
 
 
 
@@ -122,7 +133,7 @@ button[name="resetscore"]{
 .points-container{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;  
+  justify-content: flex-end;
 }
 
 #timer-container{

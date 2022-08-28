@@ -18,15 +18,15 @@
             </div>
             <div id="timer-container">
               <div>
-                <p id="timerp">00:00</p>
+                <p id="timerp"><span id="minutes1">0</span><span id="minutes2">0</span>:<span id="seconds1">0</span><span id="seconds2">0</span></p>
               </div>
               <div id="timerbtn-container2">
-                <button type="button" name="start" id="timerbtn">START CLOCK</button>
+                <button type="button" name="start" id="timerbtn" onclick="startClock()">START CLOCK</button>
               </div>
 
               <div id="timerbtn-container3">
-                <button type="button" name="stop" >STOP CLOCK</button>
-                <button type="button" name="reset" >RESET CLOCK</button>
+                <button type="button" name="stop" onclick="stopClock()">STOP CLOCK</button>
+                <button type="button" name="reset" onclick="resetClock()">RESET CLOCK</button>
               </div>
               <div id="timerbtn-container4">
                 <button type="button" name="resetscore" onclick="resetScore()">RESET SCORE</button>
